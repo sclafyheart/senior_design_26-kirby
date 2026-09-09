@@ -1,8 +1,16 @@
-# senior_design_26-Scorpion
-Autonomous Ball-Sorting Robot for AVC 
+# senior_design_26-kirby
 
-Current Design and Prototype:
+After connecting the Pi to the Flight Controller through USB C, run this in /Downloads folder:
 
-<img width="360" height="480" alt="image" src="https://github.com/user-attachments/assets/c5e7250b-b9ce-4c78-957e-37f707143833" />
+    mavproxy.py --master=/dev/ttyACM0 --baudrate 115200
 
-<img width="360" height="480" alt="image" src="https://github.com/user-attachments/assets/504dc05f-fd14-4bb8-b70d-dc18141bb3c5" />
+To verify the connection and open MAVProxy
+
+To run the colordetection.py: 
+
+    ros2 launch realsense2_camera rs_launch.py
+
+On a separate terminal: 
+
+    ros2 run kirbyros colordetection
+    
